@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1022295659187",
+    "project_id": "taxirentingapp",
+    "storage_bucket": "taxirentingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022295659187:android:b87eefff2ce82eb44b56c6",
+        "android_client_info": {
+          "package_name": "com.example.taxirentingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022295659187-m2qsuk8nl5r3qisvrtjhhk6n9vvb04u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.taxirentingapp",
+            "certificate_hash": "8ba2729688ef55851afb69a2735e4a86d19dc5b9"
+          }
+        },
+        {
+          "client_id": "1022295659187-h821ov3224j0g24adu9qq7vf2rh02mvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuXg_8DUqGYGF1zipLiMYbkaro2mr0ABk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022295659187-h821ov3224j0g24adu9qq7vf2rh02mvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

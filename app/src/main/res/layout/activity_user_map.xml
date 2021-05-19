@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".UserMapActivity" />
+        <com.example.taxirentingapp.HeaderTextView
+            android:id="@+id/distance_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#aafece2e"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"/>
+        <com.example.taxirentingapp.HeaderTextView
+            android:id="@+id/location_disabled_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#aaf22613"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-120dp">
+        <com.example.taxirentingapp.HeaderButton
+            android:id="@+id/select_pickup_destination_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/selector_pickup_destination_btn"
+            android:text="SELECT DEPARTURE"
+            />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mbn_backgroundBottomColor="#fece2e"
+            app:mbn_shadowColor="@android:color/darker_gray"
+            app:mbn_circleColor="@android:color/white"
+            app:mbn_countBackgroundColor="@android:color/holo_orange_dark"
+            app:mbn_countTextColor="@android:color/white"
+            app:mbn_defaultIconColor="@android:color/white"
+            app:mbn_selectedIconColor="#fece2e"
+            /></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fece2e">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bullsrent"
+        android:transitionName="logo_image"
+        android:layout_marginTop="50dp"/>
+    <LinearLayout
+        android:id="@+id/logo_text_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:transitionName="logo_text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+        <com.example.taxirentingapp.LogoTextView
+            android:id="@+id/splash_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Rad 's"
+            android:textSize="50sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="-12dp"
+            />
+        <com.example.taxirentingapp.LogoTextView
+            android:id="@+id/splash_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rentals"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:id="@+id/splash_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Coolest Car Renting App"
+            android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+
+</RelativeLayout>
